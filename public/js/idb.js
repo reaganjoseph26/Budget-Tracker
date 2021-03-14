@@ -1,7 +1,7 @@
 // create variable to hold db connection
 let db;
 // establish a connection to IndexedDB database called 'pizza_hunt' and set it to version 1
-const request = indexedDB.open('pizza_budget', 1);
+const request = indexedDB.open('new_budget', 1);
 
 // this event will emit if the database version changes (nonexistant to version 1, v1 to v2, etc.)
 request.onupgradeneeded = function(event) {
@@ -28,7 +28,7 @@ request.onsuccess = function(event) {
     console.log(event.target.errorCode);
 };
 
-function saveRecord(transaction) {
+function saveRecord(record) {
     // open a new transaction(temp. connecttion to database) with the database with read and write permissions 
     const transaction = db.transaction(['new_budget'], 'readwrite');
   
@@ -36,7 +36,7 @@ function saveRecord(transaction) {
     const budgetObjectStore = transaction.objectStore('new_budget');
   
     // add record to your store with add method
-    budgetObjectStore.add(transaction);
+    budgetObjectStore.add(record);
 };
 
 function uploadTracker() {

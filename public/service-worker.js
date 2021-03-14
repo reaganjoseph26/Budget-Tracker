@@ -6,7 +6,8 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
     "./index.html",
     "./public/css/style.css",
-    "./js/index.js"
+    "./js/index.js",
+    "./js/idb.js"
 ];
 
 //serive-wrokers run before window object, hence self keyword
