@@ -4,10 +4,11 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 
 //images not added due to cache limit
 const FILES_TO_CACHE = [
-    "./index.html",
-    "./public/css/style.css",
-    "./js/index.js",
-    "./js/idb.js"
+    "/",
+    "/index.html",
+    "/css/styles.css",
+    "/js/index.js",
+    "/js/idb.js"
 ];
 
 //serive-wrokers run before window object, hence self keyword
