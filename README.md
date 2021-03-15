@@ -20,7 +20,7 @@
   ## Usage
   The usage of this project is to manage your funds stating all of your transaction and if the amount was an addition or subtraction.
   </br> 
-  Deployed application link: 
+  Deployed application link: https://stark-forest-55745.herokuapp.com/
   </br>
   ![ScreenShot](./public/images/Screenshot.jpg)
 
