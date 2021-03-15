@@ -21,6 +21,8 @@
   ## Usage
   The usage of this project is to manage your funds stating all of your transaction and if the amount was an addition or subtraction.
   </br> 
+  Deployed application link: 
+  </br>
   ![ScreenShot](./public/images/Screenshot.jpg)
 
   ## License
